@@ -1,0 +1,140 @@
+/* boilerplate*/
+
+* {
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*variables*/
+
+:root {
+    --dark-blue: #1F2937;
+    --main-white: #f9faf8;
+    --secondary-white: #e5e7eb;
+    --button-blue: #3882f6;
+    --img-gray: #6d747d;
+    --information-header: #1f2937;
+    --dark-grey: #494e53;
+}
+
+/* coloring and font */
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--dark-blue);
+    color: var(--main-white);
+   
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-links,
+.title-left p {
+    font-size: 18px;
+    color: var(--secondary-white);
+}
+
+.title-left h1 {
+    font-size: 48px;
+    font-weight: 1000;
+}
+
+.title-left button {
+    color: var(--main-white);
+    background-color: var(--button-blue);
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+}
+
+.img-container {
+    background-color: var(--img-gray);
+}
+
+.cards-section h2 {
+    color: var(--information-header);
+    font-size: 36px;
+    font-weight: 1000;
+}
+
+.card-container {
+    border: 3px solid var(--button-blue);
+}
+
+.cards-section p {
+    font-size: 18px;
+    color: var(--dark-grey);
+}
+
+
+/* flex and alignment - header */
+
+.header-subcontainer,
+.cards-section {
+    min-width: 800px;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.upper-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+
+.title-section {
+    display: flex;
+    justify-content: space-between;
+    height: 230px;
+    gap: 25px;
+    padding: 100px 0;
+}
+
+.title-left {
+    width: 450px;
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title-left button {
+    border-radius: 10px;
+    padding: 10px 35px;
+}
+
+.img-container {
+    width: 450px;
+    height: 230px;
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* flex and alignment - cards section */
+
